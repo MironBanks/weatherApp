@@ -1,0 +1,155 @@
+:root {
+  /* Color Theme Swatches in RGBA */
+  --Colors-darkGrey-rgba: rgba(33, 33, 33, 1);
+  --Colors-grayBlue-rgba: rgba(44, 66, 81, 0.5);
+  --Colors-darkBlue-rgba: rgba(0, 115, 171, 0.5);
+  --Colors-Orange-rgba: rgba(247, 148, 29, 0.5);
+  --Colors-ltGrey-rgba: rgba(223, 227, 228, 0.5);
+  --Colors-Black-rgba: rgba(0, 0, 0, 1);
+  --Colors-White-rgba: rgba(255, 255, 255, 0.9);
+}
+
+body {
+  height: 100%;
+}
+.background {
+  height: 100vh;
+  min-height: 500px;
+  background: url(images/wa003.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#forecastTab li a.active {
+  border-bottom-color: transparent;
+  background-color: var(--Colors-Orange-rgba);
+  color: var(--Colors-darkGrey-rgba);
+  font-weight: bold;
+}
+
+#forecastTab li a {
+  border-bottom-color: transparent;
+  /*background-color: var(--CFColors-ltGrey-rgba);*/
+  color: white;
+  font-weight: 400;
+}
+
+#weatherIcon {
+  max-width: 100%;
+  height: auto;
+}
+
+#location {
+  font-weight: bolder;
+}
+
+#title {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  font-size: 4em;
+  color: var(--Colors-White-rgba);
+}
+
+#main {
+  color: white;
+  padding: 20px;
+  resize: vertical;
+}
+
+#current {
+  font-family: 'Teko', sans-serif;
+  font-weight: 200;
+  background-color: var(--Colors-grayBlue-rgba);
+  color: white;
+  resize: vertical;
+  margin-bottom: 30px;
+}
+
+#currentTemp {
+  font-size: 5em;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  color: var(--Colors-White-rgba);
+}
+
+#conditions {
+  font-family: 'Teko', sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  background-color: var(--Colors-grayBlue-rgba);
+  color: white;
+  padding: 20px;
+  margin-right: 5px;
+  resize: vertical;
+}
+
+#forecast {
+  background-color: var(--Colors-grayBlue-rgba);
+  font-family: 'Teko', sans-serif;
+  font-weight: 200;
+  color: white;
+  padding: 20px;
+  resize: vertical;
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+
+#footer {
+  font-size: 0.7em;
+  color: var(--Colors-darkGrey-rgba);
+}
+
+#footer div a {
+  font-family: 'Teko', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  color: var(--Colors-darkGrey-rgba);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #title {
+    font-size: 1.5em;
+  }
+
+  #current,
+  #wpConditions {
+    font-size: 1.5em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  #title {
+    font-size: 2em;
+  }
+
+  #current,
+  #conditions {
+    font-size: 1.5em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #title {
+    font-size: 2em;
+  }
+
+  #current,
+  #forcast {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  #background {
+    font-size: 1em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
