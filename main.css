@@ -74,6 +74,17 @@ body {
   color: var(--Colors-White-rgba);
 }
 
+#city {
+  font-family: 'Teko', sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  background-color: var(--Colors-grayBlue-rgba);
+  color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  resize: vertical;
+}
+
 #conditions {
   font-family: 'Teko', sans-serif;
   font-weight: 200;

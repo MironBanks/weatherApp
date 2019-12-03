@@ -22,7 +22,7 @@
     />
 
     <script src="keys.js"></script>
-    <script src="main.js"></script>
+    <script src="app.js"></script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -45,7 +45,7 @@
               <div class="row">
                 <div id="temp" class="col-sm">
                   <div id="location" class="row col d-md-inline-block">
-                    Oslo, Norway
+                    Oslo, NC
                   </div>
                   <div class="row col d-md-inline-block" id="dayTime">
                     Monday, 12:00PM
@@ -57,14 +57,25 @@
                     90&deg;
                   </div>
                 </div>
-                <div class="col-sm">
-                  <img
+                <div class=" col text-center">
+                  <canvas
                     id="weatherIcon"
                     class="img-fluid"
-                    src="images/MostlySunny.png"
-                  />
+                    width="228"
+                    height="228"
+                  ></canvas>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="city" class="col text-center">
+              <input
+                type="text"
+                class="city-search"
+                data-city-search
+                placeholder="Enter Location"
+              />
             </div>
           </div>
           <div class="row">
@@ -142,5 +153,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="skycons.js"></script>
   </body>
 </html>
